@@ -36,7 +36,7 @@ $(function () {
     // 发起ajax请求
     $.ajax({
       method: "POST",
-      url: "http://ajax.frontend.itheima.net/api/reguser",
+      url: "/api/reguser",
       data: {
         username: $(".reg-box input[name=username]").val(),
         password: $(".reg-box input[name=password]").val()
@@ -63,7 +63,7 @@ $(function () {
     // 发起请求
     $.ajax({
       method: "POST",
-      url: "http://ajax.frontend.itheima.net/api/login",
+      url: "/api/login",
       // 参数
       data: $(this).serialize(),
       success: function (res) {
